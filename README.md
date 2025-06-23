@@ -57,7 +57,7 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 - 整体为白色的是主动臂，整体为黑色的是从动臂
 - 两个电源分别为 12v 与 5v （电源上有写）
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53048298e2379da977c38d29cb20b1bc33854d23f94037893344bce90ea344da028f2a516dd71d6c514c4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/IMG20250616150717.jpeg)
 
 具体连接：
 
@@ -66,7 +66,7 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 
 具体解释：机械臂上的各个电机已经设置好了对应ID序号，将驱动板连接到机械臂的1号电机，其余电机通过连接线依次串联驱动
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304237bc6c62184b47381db900b2615c7b11f3e068a1f36839f246a4a3bf86350eba7fa8dea3cd378884fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/9f85edebf45b447caec3c570ec1acf51.png)
 
 - 用USB线连接驱动板与电脑
   - 简化版：先插到电脑上的USB线连接主动臂，后插到电脑上的USB线连接从动臂（注意：最好将驱动板连接到**USB扩展坞**上，电脑本身的USB接口留给后面的摄像头）
@@ -77,7 +77,7 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 
 设置端口的代码储存在lerobot/common/robot_devices/robots/configs.py文件中
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304ef5e48a51e9166e258b91737a51b6f5e176e7d7cfa3c74bb36e6aa60bcb7e6cf2b8ab8bc43b7127a4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-16%2015.34.44.png)
 
 在linux系统中，系统会给先插入的USB线分配端口号/dev/ttyACM0，后插入的的USB线分配端口号/dev/ttyACM1（**与端口的位置没关系！**）
 
@@ -89,15 +89,15 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 
 结果如下图：
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304a03dca4a4272f85df96f2fbd9f493237a541c15151d0504cbb214ad4e3b562148c4b8b92bc6031414fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/mmexport1750217907174.png)
 
 此时拔出想要查看的端口USB，然后按下Enter键，此时会显示刚才拔出USB的端口号，如下图：
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd530465f2c08563dbb70151c22b38e731b340c3633c5e7ec7b32744ff1931c7a64760ff7be7cbb82f153f4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/mmexport1750217908064.png)
 
 以及USB接线：
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304ca106fae6f818b1b7c334a86c295307183c017da6d058666eecaab68cc33fb251660d0815640afcc4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-17%2015.50.38.png)
 
 
 
@@ -110,7 +110,7 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 
 用F1-F6来代表Follower机械臂的1到6的关节舵机，L1-L6来代表Leader机械臂从1到6的关节舵机,对应的舵机型号关节及减速比信息如下：
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53045c9a13e4456d0ec8c619fce9808346a82e472d66b3b9c46b36990e1444ad478321ca4d610cf51c0b4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-16%2015.46.08.png)
 
 
 
@@ -120,7 +120,7 @@ conda install -y -c conda-forge "opencv>=4.10.0"
 
 摄像头的配置文件也写在lerobot/lerobot/common/robot_devices/robots/configs.py中，这里写好了camera_index分别是4和6，由于使用了两个摄像头占用了电脑的USB，这个应该不需要调整
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53048289d08eae89dd0b1605d54bfdf5f9d8cb988378a95644caed1aa7fabbf957b41c7774a6e7652bb44fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-17%2016.02.40.png)
 
 如果camera_index有误，无法连接摄像头，运行：
 
@@ -130,7 +130,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 
 这个命令会使用检测到的摄像头拍一些照片，可以在 outputs/images_from_opencv_cameras 目录中找到每个摄像头拍摄的图片，看一下文件名中的数字，这个就是对应摄像头的camera_index，找到后修改上面的configs.py文件即可，拍摄的图片如下图：
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304b290e22dad5d1706f8ea589a3ad5bbe7716bd8dc2cd413fea8e9981b4fab534a1cac4d0a3dc1d0184fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/mmexport1750217910041.png)
 
 
 
@@ -153,9 +153,9 @@ python lerobot/scripts/control_robot.py \
 
 注意：夹取部分张开的范围有限制，如果张开过大的话会报错（）
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53041ca6dc648aab42aea8c33bd5fdee95cc0cd4e1e22fbdda1ddc3777201ee55691a995dd5be5f7c9214fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-17%2015.35.53.png)
 
-- 输出结果如下图：![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53040c02039502a6ffa15505a4557342f6db2dcf6df5a58bf5badf65fa81f52d014e862ab6b4fed946cd4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+- 输出结果如下图：![img](https://github.com/fengnian123/lerobot/blob/main/image/mmexport1750217908881.png)
 
 # **带摄像头遥操作**
 
@@ -168,7 +168,7 @@ python lerobot/scripts/control_robot.py \
   --control.display_data=true
 ```
 
-- 运行后会弹出窗口显示两个摄像头实时的拍摄内容![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd530496e51c94ead9861795d9c09c1cef3193897acdefb0be7f2ded26c679a472c491d236bab539ae35b44fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+- 运行后会弹出窗口显示两个摄像头实时的拍摄内容![img](https://github.com/fengnian123/lerobot/blob/main/image/mmexport1750217911129.png)
 
 如果第一次弹出了窗口，后面运行的时候没有弹出，可能是窗口一直在后台，点击最左上角的按钮显示所有窗口就可以看到。
 
@@ -180,7 +180,7 @@ python lerobot/scripts/control_robot.py \
 
 - 创建 Hugging Face 令牌，进入https://huggingface.co/settings/tokens，创建一个新的访问令牌（创建的时候把能选择的访问权限都选上）
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304b90510f2fd5b1dcd65871d6a45cd5ab372c9a0978ad5e9e9c8616b51ffc3a12306787cec16a2b7804fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-17%2016.16.30.png)
 
 - 命令行登录 Hugging Face（把${HUGGINGFACE_TOKEN}换成刚才创建的访问令牌）：
 
@@ -326,15 +326,15 @@ python lerobot/scripts/train.py \
 - dataset.num_episodes=3 ：数据的视频数量，这里的示例是三个，实际过程中推荐至少记录 50 个场景，每个位置 10 个场景
 - num_total_params=51597238 (52M)：模型的参数量，使用的是52M的模型
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53045e9da0ea090503a535c15a9ecd96974c5d207fdde8f6632741ad6d997e7420d97799beb61226a1f44fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/mmexport1750223353327.png)
 
 训练的显存占用：
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304f9e1cc422cab7efbd8c7c3100fe4dffb66fbf815d5c111fd4d0f3cd6dc5511e76a27da5dc7b63a634fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-18%2013.54.13.png)
 
 - 可以在`outputs/train/act_so100_test/checkpoints` 中找到训练结果的权重文件（每20000次训练会自动保存一次模型权重），模型文件大小约为200MB
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304bd204e2fa55e7762bc79335e57218bb9ee10fb9ee3016f114f7b11cb4f306238a5c78c22badcfd474fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd53040aa0a05f3acafcdb4ebd88e38031d3f6a0026757507a3c24136c37173304752c3efd04052c15ce734fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-18%2014.04.24.png)![img](https://github.com/fengnian123/lerobot/blob/main/image/%E6%88%AA%E5%B1%8F2025-06-18%2015.40.11.png)
 
 
 
@@ -383,7 +383,7 @@ python lerobot/scripts/control_robot.py \
 
 - 测试效果：经测试，成功还是比较高的
 
-<video controls src="https://github.com/fengnian123/lerobot/blob/main/outputs/VID20250619135943.mp4" width="500" height="300"></video>
+<video controls src="[https://github.com/fengnian123/lerobot/blob/main/outputs/VID20250619135943.mp4](https://github.com/fengnian123/lerobot/blob/main/image/VID20250619135943.mp4)" width="500" height="300"></video>
 ```HTML
 <video src="https://github.com/fengnian123/lerobot/blob/main/outputs/VID20250619135943.mp4" controls="controls" width="500" height="300"></video>
 ```
