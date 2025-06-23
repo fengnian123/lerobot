@@ -383,10 +383,8 @@ python lerobot/scripts/control_robot.py \
 
 - 测试效果：经测试，成功还是比较高的
 
-<video controls src="[https://github.com/fengnian123/lerobot/blob/main/outputs/VID20250619135943.mp4](https://github.com/fengnian123/lerobot/blob/main/image/VID20250619135943.mp4)" width="500" height="300"></video>
-```HTML
-<video src="https://github.com/fengnian123/lerobot/blob/main/outputs/VID20250619135943.mp4" controls="controls" width="500" height="300"></video>
-```
+https://github.com/user-attachments/assets/a52d3f65-908b-49d0-9e14-30fa6c4e3712
+
 
 
 
@@ -414,15 +412,6 @@ Permission denied……
 
 # **其他**
 
-## **电脑使用**
-
-- 双系统使用：如果电脑重启，会默认进入Linux系统，如果需要使用Windows系统，在下图的界面中选择Windows Boot Manager选项
-
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304f1d1aaa7a10bd0e397f255cedf046998c74cf794b407507725f89a9f75282c3440de34750495bede4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
-
-- Windows系统密码：contestant0017
-- Linux系统密码：modelscope；Linux sudo密码：modelscope
-
 ## **feetech debug software**
 
 feetech debug software软件可以查看电机连接通信等情况，用于前期的调试，具体使用流程可以参考https://zhuanlan.zhihu.com/p/345309655
@@ -432,7 +421,7 @@ feetech debug software软件可以查看电机连接通信等情况，用于前�
 - 需要使用Windows系统下载
 - 打开后会自动搜索到端口号，选择波特率为1000000（最大的那个），选择**打开**（容易忽略），点击搜索可以在下方看到连接的所有电机以及ID（根据这里可以判断电机的ID以及连接是否有问题）
 
-![img](https://alidocs.dingtalk.com/core/api/resources/img/5eecdaf48460cde5b47413fbdf55368e4acc223264ed006575b8339e1c4c24831b75b38faadcd24bec177c308ebd5304d86ca86c41d076297c1437d2607c07138e6da44452d580018b46888b2b2f89b660ba644a258ba70e4fb4c8ed7016461c?tmpCode=849758f7-f581-4789-ac00-a457ee27ac08)
+![img](https://github.com/fengnian123/lerobot/blob/main/image/image123.png)
 
 - 点击“升级”可以把电机从3.9升级到3.10
 
