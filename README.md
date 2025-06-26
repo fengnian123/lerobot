@@ -1,3 +1,17 @@
+# **参考内容**
+
+- 文档：
+
+https://blog.csdn.net/u010634066/article/details/145903175
+
+https://huggingface.co/docs/lerobot/so101
+
+https://wiki.seeedstudio.com/lerobot_so100m/
+
+- 视频：
+
+https://www.bilibili.com/video/BV1TQmYYPE4b/?vd_source=03b39476c1d4fd1a0e24dbcc62560bdf
+
 # **整体流程**
 
 ![img](https://github.com/fengnian123/lerobot/blob/main/image/bbb01233b9a6460fb3f4857c41d99eed.png)
@@ -457,16 +471,4 @@ usbipd attach --wsl --busid <busid>
 
 
 
-# **参考内容**
 
-- 文档：
-
-https://blog.csdn.net/u010634066/article/details/145903175
-
-https://huggingface.co/docs/lerobot/so101
-
-https://wiki.seeedstudio.com/lerobot_so100m/
-
-- 视频：
-
-https://www.bilibili.com/video/BV1TQmYYPE4b/?vd_source=03b39476c1d4fd1a0e24dbcc62560bdf
